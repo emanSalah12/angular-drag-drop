@@ -13,7 +13,7 @@ export class TestDragDropComponent implements OnInit {
   public ordersProgress = this.getProgressOrders()
   subs = new Subscription();
 
-
+drag :boolean = false
 
 
   constructor(private dragulaService: DragulaService) {
@@ -21,42 +21,31 @@ export class TestDragDropComponent implements OnInit {
       direction: 'horizontal',
       moves: (el, source, handle, sibling) => !el.classList.contains('nodrag')
     });
-
-    this.subs.add(this.dragulaService.drag('ITEMS')
-    .subscribe(({ name, el, source }) => {
-      console.log("drag");
-        console.log(name);
-        console.log(el);
-        console.log(source);
-
-
-      })
-    );
-
     
-    this.subs.add(this.dragulaService.drop('ITEMS')
-    .subscribe(({ name, el, target, source, sibling }) => {
-      console.log("drop");
+  
+ 
+    this.subs.add(this.dragulaService.dropModel("ITEMS")
+      .subscribe(({ name, el, target, source, sibling, sourceModel, targetModel, item }) => {
+      this.drag = true
+
+        console.log("dropModel");
         console.log(name);
         console.log(el);
+        console.log(target);
         console.log(source);
+        console.log(sourceModel);
+        console.log(targetModel);
+        console.log(item);
 
-
+          setTimeout(() => {
+        this.drag = false
+            
+          }, 1000);
       })
     );
 
 
 
-    // this.subs.add(this.dragulaService.dropModel('ITEMS')
-    //   .subscribe(({ name,el }) => {
-    // console.log("dropModel");
-
-    //     console.log(name);
-    //     console.log(el);
-
-
-    //   })
-    // );
 
 
   }
@@ -323,7 +312,7 @@ export class TestDragDropComponent implements OnInit {
         Duration: 8,
         Amount: 0,
         Date: "2022-04-10T11:44:27",
-        Status: 2,
+        Status: 3,
         StatusName: "On Trip",
         PlannedLatitude: 31.24746602321279,
         PlannedLongitude: 29.97743859065263,

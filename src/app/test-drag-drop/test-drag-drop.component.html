@@ -1,4 +1,4 @@
-<section class="my-5" >
+<section class="my-5">
   <div class="contaienr">
     <div class="row">
       <div class="col text-center ">
@@ -9,135 +9,142 @@
 </section>
 
 
-<ng-container >
-<section   class="mb-5 mb-100"  >
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-header bg-light">
-            Ready order
-          </div>
-          <div class="card-body vert-scroll row" dragula="ITEMS" [(dragulaModel)]='ordersReady' >
-            <!-- card/ -->
-              <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index" [class.nodrag]="order.Status==3"  >
-                  <div class="card Order-cart my-2 font-12">
-                    <div class="card-content">
-                      <div class="card-header">
-                        <div class="row">
-                          <div class="col-12 d-flex">
-                            <img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
-                              class="img-fluid vert-sub dashed-img">
-                            
-                              <!-- <span class="move">+</span>   -->
-                            </div>
-                          <div class="col-7 padd-right-5">
-                            <h5 class="text-bold-500 mb-0"><a
-                                href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
-                            </h5>
-                            <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="Ahmed Makled">  {{order.Name}}  
-                            </h6>
-                            <h6 class="m-phone mb-0 c-blue">   {{order.Mobile}}</h6>
-                            <p class="card-text Branch my-0"> Branch <span class="c-blue">{{order.PlannedDistance}} km</span></p>
-                          </div>
-                          <div class="col-5 text-right padd-left-5">
-                            <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
-                            <p class="price my-0"><span>L.E</span>37</p>
-                            <p class="card-text Delivery my-0">
-                              READY</p>
-                          </div>
-                          <div class="col-12">
-                            <p class="card-text mt-0 address" > {{order.Address}}    </p>
-                          </div>
+<ng-container>
+  <section class="mb-5 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header bg-light">
+              Ready order
+            </div>
+            <div class="lodaing" [class.d-none]="!drag">
+              <div class="overlay text-center text-white m-auto">
+                <span>loding...</span>
+              </div>
+            </div>
+           
+            <div class="card-body vert-scroll row" dragula="ITEMS" [(dragulaModel)]='ordersReady'>
+
+              <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index"
+                [class.nodrag]="order.Status==3">
+                <div class="card Order-cart my-2 font-12">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12 d-flex">
+                          <img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                            class="img-fluid vert-sub dashed-img">
+
+                          <!-- <span class="move">+</span>   -->
+                        </div>
+                        <div class="col-7 padd-right-5">
+                          <h5 class="text-bold-500 mb-0"><a
+                              href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
+                          </h5>
+                          <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="Ahmed Makled"> {{order.Name}}
+                          </h6>
+                          <h6 class="m-phone mb-0 c-blue"> {{order.Mobile}}</h6>
+                          <p class="card-text Branch my-0"> Branch <span class="c-blue">{{order.PlannedDistance}}
+                              km</span></p>
+                        </div>
+                        <div class="col-5 text-right padd-left-5">
+                          <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
+                          <p class="price my-0"><span>L.E</span>37</p>
+                          <p class="card-text Delivery my-0">
+                            READY</p>
+                        </div>
+                        <div class="col-12">
+                          <p class="card-text mt-0 address"> {{order.Address}} </p>
                         </div>
                       </div>
                     </div>
-                    <div class="card-footer b-radius d-flex justify-content-between">
-                      <div class=" d-inline-flex me-5 ">
-                        <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
-                          style="margin-top: 2px; width: 12px; height: 12px;">
-                        <p class="range mb-1">{{order?.Date | date:'HH:mm'}}</p>
-                      </div>
-                      <div>
-                        <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
-                            style="width: 12px; height: 12px;"></a>
-                      </div>
+                  </div>
+                  <div class="card-footer b-radius d-flex justify-content-between">
+                    <div class=" d-inline-flex me-5 ">
+                      <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
+                        style="margin-top: 2px; width: 12px; height: 12px;">
+                      <p class="range mb-1">{{order?.Date | date:'HH:mm'}}</p>
+                    </div>
+                    <div>
+                      <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
+                          style="width: 12px; height: 12px;"></a>
                     </div>
                   </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
-<section  class="mb-5 mb-100"  >
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <div class="card-header bg-light">
-            Progress order
-          </div>
-          <div class="card-body vert-scroll row " dragula="ITEMS" [(dragulaModel)]='ordersProgress'   >
-            <!-- card/ -->
-              <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index" [class.nodrag]="order.Status==3"   >
-                  <div class="card Order-cart my-2 font-12">
-                    <div class="card-content">
-                      <div class="card-header">
-                        <div class="row">
-                          <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
-                              class="img-fluid vert-sub dashed-img"></div>
-                          <div class="col-7 padd-right-5">
-                            <h5 class="text-bold-500 mb-0"><a
-                                href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
-                            </h5>
-                            <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="Ahmed Makled">  {{order.Name}}  
-                            </h6>
-                            <h6 class="m-phone mb-0 c-blue">   {{order.Mobile}}</h6>
-                            <p class="card-text Branch my-0"> Branch <span class="c-blue">{{order.PlannedDistance}} km</span></p>
-                          </div>
-                          <div class="col-5 text-right padd-left-5">
-                            <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
-                            <p class="price my-0"><span>L.E</span>37</p>
-                            <p class="card-text Delivery my-0">
-                              READY</p>
-                          </div>
-                          <div class="col-12">
-                            <p class="card-text mt-0 address" > {{order.Address}}    </p>
-                          </div>
+  <section class="mb-5 mb-100">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header bg-light">
+              Progress order
+            </div>
+            <div class="lodaing" [class.d-none]="!drag">
+              <div class="overlay text-center text-white m-auto">
+                <span>loding...</span>
+              </div>
+            </div>
+            <div class="card-body vert-scroll row " dragula="ITEMS" [(dragulaModel)]='ordersProgress'>
+           
+              <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index"
+                [class.nodrag]="order.Status==3">
+                <div class="card Order-cart my-2 font-12">
+                  <div class="card-content">
+                    <div class="card-header">
+                      <div class="row">
+                        <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                            class="img-fluid vert-sub dashed-img"></div>
+                        <div class="col-7 padd-right-5">
+                          <h5 class="text-bold-500 mb-0"><a
+                              href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
+                          </h5>
+                          <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="Ahmed Makled"> {{order.Name}}
+                          </h6>
+                          <h6 class="m-phone mb-0 c-blue"> {{order.Mobile}}</h6>
+                          <p class="card-text Branch my-0"> Branch <span class="c-blue">{{order.PlannedDistance}}
+                              km</span></p>
+                        </div>
+                        <div class="col-5 text-right padd-left-5">
+                          <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
+                          <p class="price my-0"><span>L.E</span>37</p>
+                          <p class="card-text Delivery my-0">
+                            READY</p>
+                        </div>
+                        <div class="col-12">
+                          <p class="card-text mt-0 address"> {{order.Address}} </p>
                         </div>
                       </div>
                     </div>
-                    <div class="card-footer b-radius d-flex justify-content-between">
-                      <div class=" d-inline-flex me-5 ">
-                        <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
-                          style="margin-top: 2px; width: 12px; height: 12px;">
-                        <p class="range mb-1">{{order?.Date | date:'HH:mm'}}</p>
-                      </div>
-                      <div>
-                        <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
-                            style="width: 12px; height: 12px;"></a>
-                      </div>
+                  </div>
+                  <div class="card-footer b-radius d-flex justify-content-between">
+                    <div class=" d-inline-flex me-5 ">
+                      <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
+                        style="margin-top: 2px; width: 12px; height: 12px;">
+                      <p class="range mb-1">{{order?.Date | date:'HH:mm'}}</p>
+                    </div>
+                    <div>
+                      <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
+                          style="width: 12px; height: 12px;"></a>
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
 
 </ng-container>
-
-
-
-
-
-
-
-
