@@ -7,6 +7,8 @@
     </div>
   </div>
 </section>
+
+
 <ng-container >
 <section   class="mb-5 mb-100"  >
   <div class="container">
@@ -16,9 +18,9 @@
           <div class="card-header bg-light">
             Ready order
           </div>
-          <div class="card-body vert-scroll row" [dragula]="ITEMS" [(dragulaModel)]='ordersReady' >
+          <div class="card-body vert-scroll row" dragula="ITEMS" [(dragulaModel)]='ordersReady' >
             <!-- card/ -->
-              <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index" >
+              <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index" [class.nodrag]="order.Status==3"  >
                   <div class="card Order-cart my-2 font-12">
                     <div class="card-content">
                       <div class="card-header">
@@ -27,7 +29,7 @@
                             <img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
                               class="img-fluid vert-sub dashed-img">
                             
-                              <!-- <span class="p-1 fs-6 bg-dark text-white ms-auto">+</span> -->
+                              <!-- <span class="move">+</span>   -->
                             </div>
                           <div class="col-7 padd-right-5">
                             <h5 class="text-bold-500 mb-0"><a
@@ -79,9 +81,9 @@
           <div class="card-header bg-light">
             Progress order
           </div>
-          <div class="card-body vert-scroll row " [dragula]="ITEMS" [(dragulaModel)]='ordersProgress'   >
+          <div class="card-body vert-scroll row " dragula="ITEMS" [(dragulaModel)]='ordersProgress'   >
             <!-- card/ -->
-              <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index"   >
+              <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index" [class.nodrag]="order.Status==3"   >
                   <div class="card Order-cart my-2 font-12">
                     <div class="card-content">
                       <div class="card-header">
@@ -131,6 +133,9 @@
 
 
 </ng-container>
+
+
+
 
 
 

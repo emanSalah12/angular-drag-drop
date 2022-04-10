@@ -44,8 +44,11 @@
     font-size: 12px;
 }
 .move{
+    padding: 0 5px;
+    margin-right: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
     cursor: move;
-}
+    }
 
 
 
