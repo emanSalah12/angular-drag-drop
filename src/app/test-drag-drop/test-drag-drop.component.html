@@ -23,8 +23,12 @@
                     <div class="card-content">
                       <div class="card-header">
                         <div class="row">
-                          <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
-                              class="img-fluid vert-sub dashed-img"></div>
+                          <div class="col-12 d-flex">
+                            <img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                              class="img-fluid vert-sub dashed-img">
+                            
+                              <!-- <span class="p-1 fs-6 bg-dark text-white ms-auto">+</span> -->
+                            </div>
                           <div class="col-7 padd-right-5">
                             <h5 class="text-bold-500 mb-0"><a
                                 href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
@@ -75,7 +79,7 @@
           <div class="card-header bg-light">
             Progress order
           </div>
-          <div class="card-body vert-scroll row" [dragula]="ITEMS" [(dragulaModel)]='ordersProgress'   >
+          <div class="card-body vert-scroll row " [dragula]="ITEMS" [(dragulaModel)]='ordersProgress'   >
             <!-- card/ -->
               <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index"   >
                   <div class="card Order-cart my-2 font-12">

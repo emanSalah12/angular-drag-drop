@@ -14,7 +14,7 @@ export class TestDragDropComponent implements OnInit {
   public ordersProgress = this.getProgressOrders()
   subs = new Subscription();
   constructor(private dragulaService: DragulaService) {
-
+    
     this.subs.add(dragulaService.dropModel(this.ITEMS)
       .subscribe(({ el, target, source, sourceModel, targetModel, item }) => {
         console.log('dropModel:');
@@ -26,15 +26,9 @@ export class TestDragDropComponent implements OnInit {
         console.log(item);
       })
     );
-    this.subs.add(dragulaService.removeModel(this.ITEMS)
-      .subscribe(({ el, source, item, sourceModel }) => {
-        console.log('removeModel:');
-        console.log(el);
-        console.log(source);
-        console.log(sourceModel);
-        console.log(item);
-      })
-    );
+  
+
+
   }
   ngOnInit(): void {
   }
