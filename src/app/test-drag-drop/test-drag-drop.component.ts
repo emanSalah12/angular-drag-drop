@@ -9,14 +9,16 @@ import { DispatcherOrderViewModel } from '../models/dispatcher-order.model';
 })
 export class TestDragDropComponent implements OnInit {
   ITEMS = 'ITEMS';
+  ITEMS2 = 'ITEMS2';
   public ordersReady = this.getReadyOrders();
   public ordersProgress = this.getProgressOrders()
   subs = new Subscription();
   constructor(private dragulaService: DragulaService) {
-    this.subs.add(this.dragulaService.dropModel(this.ITEMS)
+
+    this.subs.add(dragulaService.dropModel(this.ITEMS)
       .subscribe(({ el, target, source, sourceModel, targetModel, item }) => {
         console.log('dropModel:');
-        console.log(el);
+        console.log("element",el);
         console.log(source);
         console.log(target);
         console.log(sourceModel);
@@ -24,7 +26,7 @@ export class TestDragDropComponent implements OnInit {
         console.log(item);
       })
     );
-    this.subs.add(this.dragulaService.removeModel(this.ITEMS)
+    this.subs.add(dragulaService.removeModel(this.ITEMS)
       .subscribe(({ el, source, item, sourceModel }) => {
         console.log('removeModel:');
         console.log(el);
@@ -189,7 +191,7 @@ export class TestDragDropComponent implements OnInit {
       TripID:1787039 ,
       Code:"B870nyZSD4" ,
       OrderNumber:"-" ,
-      Name: "لوازم فرع فيكتوريا",
+      Name: "test0",
       Address:"التحرير" ,
       Mobile:"0123456789" ,
       ServicesCount:0 ,
@@ -229,7 +231,101 @@ export class TestDragDropComponent implements OnInit {
       SyncedTime:null,
       ShowPrint: true,
       Services: null
-    }
+    },
+      {
+      CompanyID:0,
+      ID:3429143 ,
+      TripID:1787039 ,
+      Code:"B870nyZSD4" ,
+      OrderNumber:"-" ,
+      Name: "test",
+      Address:"التحرير" ,
+      Mobile:"0123456789" ,
+      ServicesCount:0 ,
+      PlannedDistance:0.6 ,
+      PlannedDeliveryTime: "2022-04-10T12:19:27.0632057",
+      RemainingTime:867 ,
+      DeliveryTimeStatusName:"URGENT" ,
+      DeliveryTimeStatus: 2,
+      DistanceStatusName: "CLOSED_TO_BRANCH",
+      DistanceStatus:0,
+      Duration:8 ,
+      Amount:0 ,
+      Date: "2022-04-10T11:44:27",
+      Status:2,
+      StatusName: "On Trip",
+      PlannedLatitude: 31.24746602321279,
+      PlannedLongitude: 29.97743859065263,
+      HasGoogleLocation: true,
+      IsTopPriority: true,
+      IsPaused: false,
+      HasTimer: true,
+      isSelected: false,
+      Distance:0 ,
+      SpentTime:1239 ,
+      RateName:"NOT_RATED" ,
+      Rate: 0,
+      Note: "aaaaaaaaaaaa",
+      OrderDeliveryTime: 30,
+      CustomerID: 67970,
+      Longitude: 0,
+      Latitude: 0,
+      BranchID:2 ,
+      IsRealTime:  false,
+      IsServiceOpened:  false,
+      IsTransite:  false,
+      District:null ,
+      SyncedTime:null,
+      ShowPrint: true,
+      Services: null
+    },
+      {
+      CompanyID:0,
+      ID:3429143 ,
+      TripID:1787039 ,
+      Code:"B870nyZSD4" ,
+      OrderNumber:"-" ,
+      Name: "test",
+      Address:"التحرير" ,
+      Mobile:"0123456789" ,
+      ServicesCount:0 ,
+      PlannedDistance:0.6 ,
+      PlannedDeliveryTime: "2022-04-10T12:19:27.0632057",
+      RemainingTime:867 ,
+      DeliveryTimeStatusName:"URGENT" ,
+      DeliveryTimeStatus: 2,
+      DistanceStatusName: "CLOSED_TO_BRANCH",
+      DistanceStatus:0,
+      Duration:8 ,
+      Amount:0 ,
+      Date: "2022-04-10T11:44:27",
+      Status:2,
+      StatusName: "On Trip",
+      PlannedLatitude: 31.24746602321279,
+      PlannedLongitude: 29.97743859065263,
+      HasGoogleLocation: true,
+      IsTopPriority: true,
+      IsPaused: false,
+      HasTimer: true,
+      isSelected: false,
+      Distance:0 ,
+      SpentTime:1239 ,
+      RateName:"NOT_RATED" ,
+      Rate: 0,
+      Note: "aaaaaaaaaaaa",
+      OrderDeliveryTime: 30,
+      CustomerID: 67970,
+      Longitude: 0,
+      Latitude: 0,
+      BranchID:2 ,
+      IsRealTime:  false,
+      IsServiceOpened:  false,
+      IsTransite:  false,
+      District:null ,
+      SyncedTime:null,
+      ShowPrint: true,
+      Services: null
+    },
   ]
   }
   ngOnDestroy() {
