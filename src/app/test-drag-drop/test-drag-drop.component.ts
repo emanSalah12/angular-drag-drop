@@ -2,26 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import { DragulaService } from 'ng2-dragula';
 import { Subscription } from 'rxjs';
 import { DispatcherOrderViewModel } from '../models/dispatcher-order.model';
-
 @Component({
   selector: 'app-test-drag-drop',
   templateUrl: './test-drag-drop.component.html',
   styleUrls: ['./test-drag-drop.component.css']
 })
 export class TestDragDropComponent implements OnInit {
-
   ITEMS = 'ITEMS';
-  public many = this.getReadyOrders();
-  public many2 = this.getProgressOrders()
-
+  public ordersReady = this.getReadyOrders();
+  public ordersProgress = this.getProgressOrders()
   subs = new Subscription();
-  
-
-
-
-
   constructor(private dragulaService: DragulaService) {
-  
     this.subs.add(this.dragulaService.dropModel(this.ITEMS)
       .subscribe(({ el, target, source, sourceModel, targetModel, item }) => {
         console.log('dropModel:');
@@ -42,16 +33,9 @@ export class TestDragDropComponent implements OnInit {
         console.log(item);
       })
     );
-
-
-
   }
-
   ngOnInit(): void {
-  
   }
-
-
   getReadyOrders(): DispatcherOrderViewModel[] {
     return [
       {
@@ -197,8 +181,6 @@ export class TestDragDropComponent implements OnInit {
     },
   ]
   }
-
-
   getProgressOrders(): DispatcherOrderViewModel[] {
     return [
       {
@@ -250,10 +232,7 @@ export class TestDragDropComponent implements OnInit {
     }
   ]
   }
-
-
   ngOnDestroy() {
     this.subs.unsubscribe();
   }
-
 }

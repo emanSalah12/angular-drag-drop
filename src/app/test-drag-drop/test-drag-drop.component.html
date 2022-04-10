@@ -18,8 +18,8 @@
           </div>
           <div class="card-body vert-scroll"  >
             <!-- card/ -->
-            <div class="row" [dragula]="ITEMS" [(dragulaModel)]='many' >
-              <div class="curd-width px-1" *ngFor="let order of many ; let i = index" >
+            <div class="row" [dragula]="ITEMS" [(dragulaModel)]='ordersReady' >
+              <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index" >
                 <div>
                   <div class="card Order-cart my-2 font-12">
                     <div class="card-content">
@@ -81,8 +81,8 @@
           </div>
           <div class="card-body vert-scroll"  >
             <!-- card/ -->
-            <div class="row"  [dragula]="ITEMS" [(dragulaModel)]='many2' >
-              <div class="curd-width px-1" *ngFor="let order of many2 ; let i = index" >
+            <div class="row"  [dragula]="ITEMS" [(dragulaModel)]='ordersProgress' >
+              <div class="curd-width px-1" *ngFor="let order of ordersProgress ; let i = index" >
                 <div>
                   <div class="card Order-cart my-2 font-12">
                     <div class="card-content">
