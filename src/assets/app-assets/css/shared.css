@@ -1,0 +1,14 @@
+.scolled
+{
+
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+;
+}
+
+.c-pointer
+{
+    white-space: nowrap;
+
+}

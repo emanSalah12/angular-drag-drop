@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #162944;
+      }
+    </style>
+  </defs>
+  <g id="unlock" transform="translate(-52)">
+    <g id="Group_16607" data-name="Group 16607" transform="translate(52 0)">
+      <g id="Group_16606" data-name="Group 16606">
+        <path id="Path_19254" data-name="Path 19254" class="cls-1" d="M65.647,7.344H57.332V4.132a2.669,2.669,0,0,1,5.333,0V5.625h1.569V4.132a4.237,4.237,0,0,0-8.471,0V7.344h-1.41A2.351,2.351,0,0,0,52,9.688v7.969A2.351,2.351,0,0,0,54.353,20H65.647A2.351,2.351,0,0,0,68,17.657V9.688A2.351,2.351,0,0,0,65.647,7.344Zm.784,10.313a.784.784,0,0,1-.784.781H54.353a.784.784,0,0,1-.784-.781V9.688a.784.784,0,0,1,.784-.781H65.647a.784.784,0,0,1,.784.781Z" transform="translate(-52 0)"/>
+      </g>
+    </g>
+    <g id="Group_16609" data-name="Group 16609" transform="translate(58.555 11.172)">
+      <g id="Group_16608" data-name="Group 16608">
+        <path id="Path_19255" data-name="Path 19255" class="cls-1" d="M220.445,286a1.445,1.445,0,0,0-.783,2.66v1.715a.781.781,0,1,0,1.563,0v-1.713a1.445,1.445,0,0,0-.78-2.662Z" transform="translate(-219 -286)"/>
+      </g>
+    </g>
+  </g>
+</svg>

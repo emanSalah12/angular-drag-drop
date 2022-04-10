@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="44" viewBox="0 0 44 44">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="44" height="44" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_1" data-name="Repeat Grid 1" clip-path="url(#clip-path)">
+    <g id="Group_16875" data-name="Group 16875" transform="translate(-624 -2646)">
+      <circle id="Ellipse_2754" data-name="Ellipse 2754" cx="22" cy="22" r="22" transform="translate(624 2646)" fill="#8cc3f9"/>
+      <g id="shout" transform="translate(635 2659)">
+        <path id="Path_19368" data-name="Path 19368" d="M220.961,12.574l7.679,4.046V0l-7.679,4.046Zm0,0" transform="translate(-211.035)" fill="#fff"/>
+        <path id="Path_19369" data-name="Path 19369" d="M451.953,169.988h2.7v1.348h-2.7Zm0,0" transform="translate(-431.651 -162.352)" fill="#fff"/>
+        <path id="Path_19370" data-name="Path 19370" d="M433.793,73.172l.516,1.245-2.492,1.033L431.3,74.2Zm0,0" transform="translate(-411.926 -69.885)" fill="#fff"/>
+        <path id="Path_19371" data-name="Path 19371" d="M433.781,248.383l-2.492-1.032.516-1.245,2.492,1.032Zm0,0" transform="translate(-411.915 -235.05)" fill="#fff"/>
+        <path id="Path_19372" data-name="Path 19372" d="M8.578,99.934H2.7v1.349H2.472a2.472,2.472,0,0,0,0,4.944H2.7v1.349H4.206l1.484,5.4h4.372L8.578,107.8Zm0,0" transform="translate(0 -95.444)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

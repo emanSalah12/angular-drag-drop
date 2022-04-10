@@ -1,0 +1,1255 @@
+{
+    "shared": {
+        "name-arabic": "الاسم عربي",
+        "page": "Page",
+        "of": "Of",
+        "total-items": "Total items",
+        "next": "Next",
+        "previous": "Previous",
+        "status": "Status",
+        "name": "Name",
+        "call-center": "Call Center",
+        "serial-number": "Serial Number",
+        "email": "Email",
+        "mobile": "Mobile",
+        "address": "Address",
+        "createDate": "Creation Date",
+        "number": "Number",
+        "id": "ID",
+        "icon": "Icon",
+        "done":"Done",
+        "time":"Time",
+        "national-id": "National ID",
+        "enroll-id": "Enroll ID",
+        "created-date": "Created Date",
+        "search": "Search",
+        "apply-search": "Apply Search",
+        "update": "Update",
+        "from-date": "From Date",
+        "to-date": "To Date",
+        "date": "Date",
+        "yes": "Yes",
+        "add-to-specific-trip":"Added To Specific Trip",
+        "change-trip":"Change Trip",
+        "no": "No",
+        "save": "Save",
+        "add": "Add",
+        "roles": "Roles",
+        "create": "Create",
+        "longitude":"Longitude",
+        "latitude":"Latitude",
+        "accuracy":"Accuracy",
+        "branch":"Branch",
+        "area":"Area",
+        "Deliveryman Branch":"Deliveryman Branch",
+        "Select Area":"Select Area",
+        "trip":"Trip",
+        "remove-from-trip":"Remove From Trip",
+        "orders":"Orders",
+        "home": "Home",
+        "report":"Download Report",
+        "validation": {
+            "required": "required field.",
+            "max-length": "max length validation.",
+            "min-length": "min length validation.",
+            "only-numbers": "obly number valid.",
+            "no-numbers": "No number allowed.",
+            "email":"Invalid Email "
+        },
+        "delete-confirmation": {
+            "message": "Are You sure You want to Delete This item",
+            "yes": "YES",
+            "cancel": "Cancel"
+        },
+        "delete-list-confirmation": {
+            "message": "Are You sure You want to Delete These items"
+        },
+        "Archive-confirmation": {
+            "message": "Are You sure You want to Archive This Deliveryman",
+            "yes": "YES",
+            "cancel": "Cancel"
+        },
+        "deactive-user-confirmation": {
+            "message": "Are You sure You want to Deactivate This User",
+            "yes": "YES",
+            "cancel": "Cancel"
+        },
+        "active-user-confirmation": {
+            "message": "Are You sure You want to Activate This User",
+            "yes": "YES",
+            "cancel": "Cancel"
+        },
+        "active-confirmation": {
+            "message": "Are You sure You want to Reactivate This Deliveryman",
+            "yes": "YES",
+            "cancel": "Cancel"
+        },
+        "trip-performance": {
+            "by-date-title": "Trip Performance By Date",
+            "by-branch-title": "Trip Performance By Branch",
+            "by-dm-title": "Trip Performance By Deliveryman",
+            "by-dm-ds-title": "Trip Performance By Delivery Services",
+            "date": "Date",
+            "branch": "Branch",
+            "on-duty-time": "AVG On Duty Duration(hr)",
+            "deliveryman": "Deliveryman",
+            "total": "Total Trips",
+            "total-service": "Total Services",
+            "total-service-amount": "Total Services Amount",
+            "excellent-trips": "Excellent Trips",
+            "excellent-trips-percetage": "Excellent Percetage",
+            "good-trips": "Good Trips",
+            "good-trips-percetage": "Good Percetage",
+            "late-trips": "Late Trips",
+            "late-trips-percetage": "Late Percetage",
+            "too-late-trips": "Too Late Trips",
+            "too-late-trips-percetage": "Too Late Percetage",
+            "average-delivery-time": "AVG Trip Duration(Min)",
+            "stars": "Deliveryman Stars",
+            "score-stars": "Score Stars ",
+            "average-distance": "AVG Distance (Km)",
+            "avg-on-duty-time": "Avg OnDuty (Hrs)",
+            "avg-order-on-trip": "Avg Order On Trip"
+        },
+        "add-to-queue-confirmation": {
+            "message": "Are You sure You want to Add To Queue Deliveryman with ID ="
+        },
+        "remove-penalize-confirmation": {
+            "message": "Are You sure You want to Remove Penalize From  Deliveryman with ID ="
+        },
+        "force-log-out-confirmation": {
+            "message": "Are You sure You want to Force Log out this Deliveryman "
+        },
+        "pause-order-confirmation": {
+            "message": "Are You sure You want to Pause This Order"
+        },
+        "deliver-order-confirmation": {
+            "message": "Are You sure You want to Deliver This Order"
+        },
+        "remove-order-from-trip-confirmation": {
+            "message": "Are You sure You want to Remove This Order From Trip"
+        },
+        "scheduled-order-confirmation": {
+            "message": "Select Scheduled time and date. "
+        },
+        "unscheduled-order-confirmation": {
+            "message": "Are You sure You want to unscheduled This Order "
+        },
+        "change-deliveryman-confirmation": {
+            "message": "Are You sure You want to Cahnge Deliveryman"
+        },
+        "cancel-confirmation": {
+            "message": "Are You sure You want to Cancel This item",
+            "yes": "YES",
+            "cancel": "NO"
+        },
+        "no-data-found": "No Data Founded"
+    },
+    "accounting": {
+        "currency": {
+            "title": "العملات",
+            "title-create": "اضافة عملة جديدة",
+            "title-edit": "تعديل عملة"
+        }
+    },
+    "deliveryman": {
+        "title": "Deliverymen",
+        "id": "ID",
+        "title-create": "Create New Deliveryman",
+        "title-edit": "Edit Deliveryman",
+        "name": "Name",
+        "new": "New Deliveryman",
+        "is-loggedIn": "Is LoggedIn",
+        "QueueNo": "Queue Number",
+        "last-activity": "Last Activity",
+        "excellent-trip-num": "Excellent Trip Number",
+        "points":"Points",
+        "total-trip-num": "Total Trip Number",
+        "stars": "Stars",
+        "branch-name": "Branch",
+        "mobile": "Mobile",
+        "change-branch": "Change Branch",
+        "profile": "Profile",
+        "add-to-queue": "Add To Queue",
+        "archive": "Archive",
+        "force-log-out": "Force Log Out",
+        "ranking": "Ranking",
+        "wallet": "Wallet",
+        "view-all": "View All",
+        "start-shift": "Start Shift",
+        "end-shift": "End Shift",
+        "on-shift": "On Shift",
+        "on-break": "On Break",
+        "end-break": "End Break",
+        "break": "Break ",
+        "remove-penalize": "Remove Penalize",
+        "choose-branch": "Choose Branch",
+        "reactivte": "Activate",
+        "app-version":"App Version"
+        
+        
+    },
+    "branch-orders-and-deliverymen": {
+        "title": "Branch Orders And Deliverymen",
+        "name-english": "Name",
+        "pending-orders": "Pending ",
+        "paused-orders": "Paused ",
+        "last-delivered-order": "Last Delivered ",
+        "break-deliverymen": "Break ",
+        "onduty-deliverymen": "OnDuty ",
+        "available-deliverymen": "Available ",
+        "total-deliverymen": "Total On Shift",
+        "branch": "Branch",
+        "orders": "Orders",
+        "deliverymen": "Deliverymen"
+    },
+    "trip-request": {
+        "title": "Trip Request",
+        "id": "ID",
+        "deliverymen": "Deliveryman",
+        "sent-time": "Sent Time",
+        "deliverd-time": "Deliverd Time",
+        "read-time": "Read Time",
+        "trip-number": "Trip Number",
+        "branch-name": "Branch",
+        "company-name": "Company"
+    },
+    "order-priority": {
+        "branch-name": "Branch Name",
+        "id": "ID",
+        "distance-status": "Distance Status",
+        "delivery-time-status": "Delivery Time Status",
+        "priority": "Priority",
+        "title": "Order priority"
+    },
+    "deliveryman-log": {
+        "title": "Deliveryman Log",
+        "id": "ID",
+        "deliveryman": "Deliveryman",
+        "action": "Action",
+        "item-id": "Item ID",
+        "latitude": "Latitude",
+        "longitude": "Longitude",
+        "note": "Note"
+    },
+    "shipping-address": {
+        "title": "Shipping Address",
+        "id": "ID",
+        "customer-name": "Customer Name",
+        "customer-number": "Customer Number",
+        "customer-mobile": "Customer Mobile",
+        "city-name": "City",
+        "city-id": "City ID",
+        "address": "Address",
+        "longitude": "Longitude",
+        "latitude": "Latitude",
+        "has-google-location": "Geolocation",
+        "distance": "Distance",
+        "orders-count": "Orders Count",
+        "is-active": "IsActive",
+        "branch-name": "Branch Name",
+        "company-name": "Company"
+    },
+    "availability-request": {
+        "title": "Availability Requests",
+        "id": "ID",
+        "deliveryman-name": "Deliveryman",
+        "statue": "Status",
+        "create-date": "Created Date",
+        "send-date": "Sent Date",
+        "delivered-date": "Delivered To Mobile",
+        "read-date": "Read Date",
+        "expiration-date": "Expiration Date",
+        "branch-name": "Branch Name",
+        "company-name": "Company"
+    },
+    "order": {
+        "title": "Orders",
+        "id": "Order ID",
+        "trip-iD": "Trip ID",
+        "trip-number": "Trip Number",
+        "customer-mobile": "Customer Mobile",
+        "statue": "Status",
+        "customer-name": "Customer Name",
+        "city-name": "City Name ",
+        "address": "Address",
+        "planned-longitude": "Expected Longitude",
+        "planned-latitude": "Expected Latitude",
+        "longitude": "Longitude",
+        "latitude": "Latitude",
+        "has-google-location": "Geolocation",
+        "code": "Code",
+        "order-number": "Order Number",
+        "weight": "Weight",
+        "services-count": "Services Count",
+        "distance": "Distance",
+        "serving-time": "Serving Time",
+        "priority": "Priority",
+        "status": "Status",
+        "remaining-time": "Remaining Time",
+        "distance-status": "Distance Status",
+        "planned-preperation-date": "Expected Preperation Date",
+        "planned-delivery-date": "Delivered Date",
+        "created-date": "Created Date",
+        "sent-time": "Sent Time",
+        "is-active": "Is Active",
+        "delivery-time": "Delivery Time",
+        "planned-distance": "Expected Distance",
+        "title-create": "Create New Order",
+        "total-delivery-time": "Order Duration",
+        "new": "New Order",
+        "rate": "Performance",
+        "deliveryman-name": "Deliveryman",
+        "branch-name": "Branch",
+        "company-name": "Company",
+        "title-performance-by-date": "Order Performance By Date",
+        "title-performance-by-branch": "Order Performance By Branch",
+        "title-performance-by-deliveryman": "Order Performance By Deliveryman",
+        "date": "Date",
+        "total": "Total Orders",
+        "excellent-orders": "Excellent Orders",
+        "good-orders": "Good Orders",
+        "late-orders": "Late Orders",
+        "too-late-orders": "Too Late Orders",
+        "excellent-orders-percentage": "Excellent Percentage",
+        "good-orders-percentage": "Good Percentage",
+        "late-orders-percentage": "Late Percentage",
+        "too-late-orders-percentage": "Too Late Percentage",
+        "average-delivery-time": "Average Duration(Min)",
+        "average-preparation-duration": "Average Preparation(Min)",
+        "stars": "Deliveryman Stars",
+        "create-random-order": "Create Random Order",
+        "customer-serial-number": "Customer Serial Number",
+        "is-fast-order":"Is Fast Order",
+        "trip-rate-status":"Trip Performance",
+        "is-transite":{
+            "title":"Is Transite",
+            "all":"Select All",
+            "yes":"YES",
+            "no":"No"
+        },
+        "transfer":{
+            "transfer-number" : "Transfer Number",
+            "order-number" :"Order Number",
+            "from-branch" : "From Branch",
+            "to-branch" : "To Branch",
+            "shipment-time" : "Shipment Time",
+            "created-date" :"Created Date"
+        }
+    },
+    "order-config": {
+        "title": "Order Configurations",
+        "id": "ID",
+        "preparation-time": "Preparation Time(Sec)",
+        "ready-time": "Ready Time(Min)",
+        "branch-name": "Branch",
+        "normal-time": "Normal Time(Min)",
+        "urgent-time": "Urgent Time(Min)",
+        "top-urgent-time": "Top Urgent Time(Min)",
+        "max-waiting-time": "Max Waiting Time(Min)",
+        "min-waiting-time": "Min Waiting Time(Min)",
+        "service-time": "Service Time(Sec)",
+        "close-to-branch-distance": "Close To Branch Distance(M)",
+        "far-distance": " Far  Distance(M) ",
+        "close-distance": "Close Distance(m)",
+        "within-range-distance": "Within Range Distance(M)",
+        "company-name": "Company",
+        "in-min": "in minutes",
+        "in-sec": "in Second",
+        "in-meter": "in meter",
+        "order-excelant-time":"Excellent Time(Min)",
+        "order-good-time":"Good Time(Min)",
+        "order-late-time":"Late Time(Min)",
+        "order-too-late-time":"Too Late Time(Min)"
+    },
+    "trip": {
+        "title": "Trip",
+        "id": "ID",
+        "number": "Number",
+        "orders": "Orders",
+        "amount": "Amount",
+        "deliveryman-name": "Deliveryman",
+        "statue": "Status",
+        "create-date": "Created Date",
+        "start-date": "Started Date",
+        "enrollid": "Deliveryman Enroll ID",
+        "complete-date": "Complete Date",
+        "expiration-date": "Expiration Date",
+        "rate-status":"Performance",
+        "is-special":"Is Special",
+        "duration":"Duration",
+        "branch-name":"Branch",
+        "company-name":"Company",
+        "distance":"Distance(km)",
+        "yes":"YES",
+        "no":"No",
+        "edit-performance":{
+            "title":"Change Performance",
+            "trip-performance":"Trip Performance",
+            "excellent":"Excellent",
+            "good":"Good",
+            "late":"Late",
+            "too-late":"Too Late",
+            "choose-reason":"Choose Reason",
+            "done":"Done"
+        }
+       
+    },
+    "trip-validation": {
+        "title": "Trip Validation Request",
+        "id": "Trip ID",
+        "number": "Number",
+        "orders": "Orders",
+        "amount": "Amount",
+        "deliveryman-name": "Deliveryman",
+        "statue": "Status",
+        "from-date": "From Date",
+        "to-date": "To Date",
+        "create-date": "Created Date",
+        "start-date": "Started Date",
+        "complete-date": "Complete Date",
+        "expiration-date": "Expiration Date",
+        "rate-status": "Performance",
+        "is-special": "Is Special",
+        "duration": "Trip Duration",
+        "branch-name": "Branch",
+        "company-name": "Company",
+        "request-status": "Request Status",
+        "validation-date": "Validation Time",
+        "validation-note": "Validation Note",
+        "note": "Note"
+    },
+    "customer": {
+        "title": "Customer",
+        "shiping-addresses": "Shiping Addresses",
+        "orders-count": "Orders Count",
+        "branch-name": "Branch Name",
+        "company-name": "Company",
+        "new": "New Customer",
+        "customer-name": "Customer Name",
+        "customer-mobile": "Customer Mobile",
+        "customer-serail-number": "Customer Serial Number",
+        "all-branch": "All Branch"
+    },
+    "ranking": {
+        "title": "Ranking Board",
+        "branch": "Branch",
+        "area": "Area",
+        "dm-name": "Delivery Man Name",
+        "activity-score": "Activity Score",
+        "performance": "Performance",
+        "requests": "Requests",
+        "customer-reviews": "Customer Reviews",
+        "complains": "Complains"
+    },
+    "top-customer": {
+        "id": "ID",
+        "name": "Name",
+        "mobile": "Mobile",
+        "amount": "Amount"
+    },
+    "recent-order": {
+        "number": "Number",
+        "created-date": "Created Date",
+        "date": "Date",
+        "status": "Status",
+        "customer-name": "Customer Name",
+        "branch-name": "Branch"
+    },
+    "order-details": {
+        "title": "Order Details",
+        "price": "Price",
+        "qty": "Quantity",
+        "status": "Status",
+        "action": "Action",
+        "product-id": "Product ID",
+        "created-date": "Date",
+        "note": "Note",
+        "print":"Print",
+        "preview":"Preview",
+        "prepared-by":"Prepared By",
+        "prepared-duration":"Prepared Duration",
+        "prepared-time":"Prepared Time"
+        
+    },
+    "trip-details": {
+        "title": "Trip Details",
+        "order-number": "Order Number",
+        "planned-delivery-time": "Expected Delivery Time",
+        "delivery-time": "Delivery Time",
+        "date": "Date",
+        "status": "Status",
+        "deliveryman-name": "Deliveryman",
+        "created-date": "Date",
+        "address": "Address",
+        "customer-name": "Customer Name",
+        "customer-mobile": "Customer Mobile",
+        "note": "Note",
+        "action": "Action",
+        "user-name": "User Name"
+    },
+    "customer-profile": {
+        "title": "Customer Profile",
+        "profile": "Profile",
+        "orders": "Orders",
+        "branch": {
+            "last-branch": "Last Branch",
+            "distance": "Distance",
+            "pendding-order": "Pending Orders",
+            "orders": "Orders(s)",
+            "available": "Available",
+            "deliveryman": "Deliveryman",
+            "deliverymen": "Deliverymen",
+            "on-duty": "On Duty",
+            "closest-branch": "Closest Branch"
+        },
+        "order": {
+            "title": "Orders",
+            "status": "Status",
+            "on-trip": "On Trip",
+            "deliver-time": "Deliver Time",
+            "min": "Mins",
+            "total-price": "Total Price",
+            "address": "Address",
+            "branch-name": "Branch Name"
+        },
+        "personal-info": {
+            "new-customer": "New Customer",
+            "top": "Top",
+            "mobile-number": "Mobile Number",
+            "serial-number": "Serial Number",
+            "address": "Address",
+            "customer-behavior": "Customer Behavior",
+            "performance": "Performance",
+            "avg-deliver-time": "Average Deliver Time",
+            "total-orders": "Total Orders",
+            "highest-ticket": "Highest Ticket",
+            "avg-ticket": "Average Ticket"
+        },
+        "order-performance": {
+            "title": "Order Performance",
+            "by-month": "By Month",
+            "by-day": "By day"
+        }
+    },
+    "wallet-transaction": {
+        "title": "Wallet Transaction",
+        "is-award": "IS Award",
+        "type": "Type",
+        "trip-number": "Trip Number",
+        "deliveryman-name": "Deliveryman",
+        "amount": "Amount",
+        "note": "Note",
+        "balance": "Balance",
+        "new": "New Wallet Transaction",
+        "title-create": "Create New Wallet TransAction",
+        "branch-name": "Branch Name",
+        "company-name": "Company",
+        "validation": {
+            "positive-numbers": "Only Positive Number Valid"
+        }
+    },
+    "wallet-period": {
+        "title": "Wallet Transaction",
+        "branch-name": "Branch",
+        "deliveryman-name": "Deliveryman",
+        "date": "Date",
+        "total-amount": "Total Amount",
+        "paid-amount": "Paid Amount",
+        "un-paid-amount": "UnPaid Amount",
+        "total-trips": "Total Trips",
+        "total-orders": "Total Orders",
+        "validation": "Vaildation",
+        "company-name": "Company",
+        "month": "Month",
+        "validate": "Validation",
+        "detail": {
+            "title": "Wallet Transaction Details",
+            "total-amount": "Total Amount",
+            "paid-amount": "Paid Amount",
+            "unpaid-amount": "UnPaid Amount"
+        }
+    },
+    "wallet-days": {
+        "title": "Wallet Transaction",
+        "deliveryman-name": "Deliveryman",
+        "date": "Date",
+        "total-amount": "Total Amount",
+        "shift-bonus": "Shift Bonus",
+        "shift-hours": "Shift Hours",
+        "bonus": "Trip Bonus",
+        "detuction": "Detuction",
+        "trips": "Trips",
+        "orders": "Orders",
+        "change-performance": "Change Performance",
+        "branch-name": "Branch Name",
+        "company-name": "Company"
+    },
+    "dm-rank": {
+        "title": "Deliveryman Rank By Points",
+        "branch-name": "Branch Name",
+        "id": "ID",
+        "name": "Name",
+        "total": "Total Ranking Points",
+        "rank": "Rank",
+        "trip-request": "Requests",
+        "trip-performance": "Performance",
+        "customer-review": "Customer Reviews",
+        "pts": "pts",
+        "complaign": "Complains",
+        "bonus":"Bonus",
+        "deduction":"Deduction",
+        "percentage":"Percentage"
+    },
+    "top-items": {
+        "order-count": "Order Count",
+        "item-id": "Item ID",
+        "branch-name": "Branch"
+    },
+    "branch-configuration": {
+        "title-update": "Update Order Configuration",
+        "title-address-update": "Update Address Configuration",
+        "title-trip-update": "Update Trip Configuration",
+        "in-min": "in minutes",
+        "in-sec": "in Second",
+        "in-meter": "in meter"
+    },
+    "item": {
+        "title": "Item",
+        "count-name": "Item (s)",
+        "name": "Name",
+        "id": "ID",
+        "price": "Price",
+        "serving-time": "Serving Time",
+        "preparation-time": "Preparation Time",
+        "is-service": "Is Service",
+        "number-of-ordering-item": "Number Of Ordering",
+        "company-name": "Company",
+        "total-amount": "Total Amount",
+        "is-top-priority":"Is Top Priority",
+        "is-transite":"Is Transite",
+        "service": {
+            "title": "Select Service",
+            "cancel": "Cancel",
+            "save": "Save"
+        }
+    },
+    "service": {
+        "title": "Service",
+        "count-name": "Service (s)",
+        "name": "Name",
+        "id": "ID",
+        "price": "Price",
+        "serving-time": "Serving Time",
+        "preparation-time": "Preparation Time",
+        "is-service": "Is Service",
+        "number-of-ordering-item": "Number Of Ordering",
+        "company-name": "Company",
+        "total-amount": "Total Amount",
+        "service": {
+            "title": "Select Service",
+            "cancel": "Cancel",
+            "save": "Save"
+        }
+    },
+    "branch-manager": {
+        "title": "Manager",
+        "id": "ID",
+        "branch": "Branch",
+        "manager": "Manager",
+        "manager-email": "Manager Email",
+        "manager-mobile": "Manager Mobile",
+        "manager-last-activity": "Manager Last Activity",
+        "title-create": "Create  Manager",
+        "company-name": "Company"
+    },
+    "deliveryman-break": {
+        "deliveryman-name": "Deliveryman",
+        "close-date": "CloseDate",
+        "start-date": "Start Date",
+        "title": "Deliveryman Break",
+        "branch-name": "Branch",
+        "duration": "Duration",
+        "company-name": "Company"
+    },
+    "deliveryman-validation": {
+        "deliveryman-name": "Deliveryman",
+        "to-date": "To Date",
+        "from-date": "From Date",
+        "total-trips": "Total Trips",
+        "total-orders": "Total Orders",
+        "unpaid-amount": "UnPaid Amount",
+        "paid-amount": "Paid Amount",
+        "total-amount": "Total Amount"
+    },
+    "branch": {
+        "id": "ID",
+        "deliverymen-count": "Deliverymen",
+        "name": "Name",
+        "create-date": "Created Date",
+        "name-arabic": "Name in Arabic",
+        "name-english": "Name in English",
+        "branch-profile": "Branch Profile",
+        "title": "Branches",
+        "new": "New Branch",
+        "address": "Address",
+        "title-create": "Create New Branch",
+        "title-edit": "Edit Branch",
+        "company-name": "Company",
+        "last-order-create-date": "Last Order Create Date",
+        "last-order-date": "Last Order Date",
+        "last-order": "Last Delivered Order",
+        "active": "Active",
+        "title-performance": "Branch Performance",
+        "order-count": "Order Count",
+        "excellent-trip-count": "Excellent Trip",
+        "avg-delivery-time": "AVG Delivery Time (min)",
+        "avg-waiting-time": "AVG Waiting Time (min)",
+        "avg-onduty-time": "AVG OnDuty Time (hr)",
+        "order-per-dm": "Order Per Deliveryman",
+        "excellent-orders": "Excellent Orders",
+        "too-late-orders": "TooLateOrders",
+        "ignored-trip": "Ignored Trip",
+        "avg-distance": "AVG Distance (km)",
+        "fast-order-count": "Fast Orders Count",
+        "special-trip-Count": "Special Trip Count",
+        "add-to-specific-trip-count": "Added To Specific Trip",
+        "order-on-trip":"Avg Order Per Trip",
+        "title-behavior":"Branch Behavior",
+        "title-deliverytime":"Branch Delivery Time"
+        
+    },
+    "area-perormance":{
+        "title":"Area Performance",
+        "title-behavior":"Branch Behavior",
+        "order-count": "Total Orders",
+        "avg-delivery-time": "Avg. Delivery Duration(Mins)",
+        "avg-onduty-time": "AVG OnDuty / day(Hr)",
+        "order-per-dm": "AVG Order on Deliveryman / day",
+        "excellent-orders": "Excellent Orders(%)",
+        "too-late-orders": "Too Late Orders",
+        "ignored-trip": "Ignored Trip",
+        "avg-distance": "Avg. Customers Distance(Km)",
+        "fast-order-count": "Fast Orders",
+        "special-trip-Count": "Special Trip",
+        "add-to-specific-trip-count": "Added To Specific Trip",
+        "order-on-trip":"AVG Order/ Trip",
+        "excellent-trip-count":"Excellent Trips(%)",
+        "branch-count":"Branches",
+        "trip-distance":" Avg. Trip Distance (km)"
+    },
+    "company": {
+        "id": "ID",
+        "create-date": "Created Date",
+        "name-arabic": "Name in Arabic",
+        "name-english": "Name in English",
+        "title": "Companies",
+        "new": "New Company",
+        "address": "Address",
+        "title-create": "Create New Company",
+        "title-edit": "Edit Company",
+        "sector-name": "Sector"
+    },
+    "service-icon": {
+        "icon": "Icon",
+        "title": "Service",
+        "new": "New Service",
+        "sector-name": "Sector Name",
+        "title-create": "Create New Service",
+        "title-edit": "Edit Service",
+        "display-order": "Display Order",
+        "serving-time": "Serving Time",
+        "code": "Code"
+    },
+    "revise-performance": {
+        "title": "Revise Performance",
+        "trip": "The Trip",
+        "done": "Done",
+        "reason": "Write the reason",
+        "accurate": "Accurate",
+        "not-accurate": "Not Accurate"
+    },
+    "trip-configuration": {
+        "title": "Trip Configurations",
+        "branch-name": "Branch Name",
+        "max-distance-between-orders": "Max Distance Between Orders(m)",
+        "max-order": "Max Order",
+        "max-orders-without-location": "max Order Without Location",
+        "max-service": "max Services",
+        "auto-start-trip": "Auto Start Trip(Sec)",
+        "excelant-time-percentage": "Excellent Time Pecentage(%)",
+        "good-time-percentage": "Good Time Pecentage(%)",
+        "late-time-percentage": "Late Time Pecentage(%)",
+        "excelent-trip-revenue": " Excellent Trip Revenue(L.E)",
+        "good-trip-revenue": "Good Trip Revenue(L.E)",
+        "late-trip-revenue": "Late Trip Revenue(L.E)",
+        "too-late-trip-revenue": "Too Late Trip Revenue(L.E)",
+        "oreder-revenue-excelent-trip": "Order Revenue in Excellent Trip(L.E)",
+        "oreder-revenue-good-trip": " Order Revenue in Good Trip(L.E)",
+        "oreder-revenue-late-trip": "Order Revenue in Late Trip ",
+        "oreder-revenue-too-late-trip": "Order Revenue in Too Late Trip(L.E) ",
+        "company-name": "Company"
+    },
+    "address-configuration": {
+        "title": "Address Cnfiguration",
+        "branch-name": "Branch Name",
+        "longitude": "Longitude",
+        "latitude": "Latitude",
+        "address-pre": "Address Prefix",
+        "address": "Address",
+        "company-name": "Company"
+    },
+    "qr-code": {
+        "title": "Qr Code",
+        "generate-qr-code": " Generate New Qr Code",
+        "print": "Print"
+    },
+    "area-manager": {
+        "title": "Area Managers",
+        "branch-name": "Branches Name",
+        "manager-name": "Manager Name",
+        "manager-email": "Manager Email",
+        "manager-mobile": "Manager Mobile",
+        "title-create": "Create Area Manager",
+        "new": "New Area Manager"
+    },
+    "user": {
+        "change-main-info": "Change Main Info",
+        "change-password": "Change Password",
+        "change-picture": "Change Profile Picture"
+    },
+    "on-duty-detail": {
+        "branch-name": "Branch Name",
+        "order-count": "Order Count",
+        "deliverymen-count": "Deliverymen Count",
+        "average-trip-score": "Average Trip Score",
+        "average-on-duty-time": "Average On Duty Time",
+        "average-delivery-time": "Average Delivery Time",
+        "deliveryman-name": "Deliveryman Name"
+    },
+    "dispatcher": {
+        "title": "Dispatcher System",
+        "deliveryman-title": "Deliverymen",
+        "deliveryman": "Deliveryman",
+        "branches": "Branches",
+        "branch": "Branch(es)",
+        "trip-list-title": "Trip List",
+        "trip": "Trip",
+        "trips": "Trip(s)",
+        "create-special-trip": "Create Special Trip",
+        "assign-to-dm": "Assign To Dm",
+        "change-deliveryman": "Change Deliveryman",
+        "complete": "Complete",
+        "cancel": "Cancel",
+        "special": "Special",
+        "orders": "Orders",
+        "ready-orders": "Ready Orders",
+        "create-fast-order": "Create Fast Order",
+        "customer-name-optional": "Customer Name (optional)",
+        "customer-number": "Customer number",
+        "in-progress-orders": "In-Progress Orders",
+        "new-orders": "New Orders",
+        "scheduled-orders":"Scheduled Orders",
+        "assign-deliveryman-title": "Assign Deliveryman",
+        "close": "Close",
+        "done": "Done",
+        "step": "Step",
+        "create": "Create",
+        "choose-reason": "Choose Reason",
+        "reason": "Reason",
+        "note": "Note",
+        "select-order": "Select Order",
+        "start": "Start",
+        "transite-orders":"Transfer",
+        "fast-order-template": {
+            "new-order-title": "Create New Order",
+            "personal-info": "Personal Info",
+            "mobile-number": "Mobile Number",
+            "search": "Search",
+            "customer-name": "Customer Name",
+            "customer-serial-number": "Customer Serial Number",
+            "shipping-address": "Shipping Address",
+            "add-shipping-address": "Add Shipping Address",
+            "select-location": "Select Location",
+            "order-info": "Order Info",
+            "order-number": "Order Number",
+            "top-periorety": "Top Periorety",
+            "services": "services",
+            "is-paused":"Paused"
+        },
+        "kpi":{
+            "avg-deliver-time":"Avg. Deliver Time",
+            "excellent-trips":"Excellent Trips",
+            "too-late-trips":"Too Late Trips",
+            "special-trip":"Special Trips",
+            "arrival-time":"Avg. Arrival Time",
+            "waiting-time":"Avg. Waiting Time",
+            "min":"min",
+            "trip":"trip"
+        }
+    },
+    "order-cart": {
+        "unpause": "Un Pause",
+        "pause": "Pause",
+        "remove-from-trip": "Remove From Trip",
+        "set-delivered": "Set As Deliverd",
+        "set-ready": "Set As Ready",
+        "set-in-progress": "Set As In Progress",
+        "scheduled":"ٌReschedule Order",
+        "set-new":"Set as new",
+        "set-top-priority": "Set as Top priority",
+        "add-to-trip": "Add To Specific Trip",
+        "send-to-store":"Send Order To Another Store",
+        "update-order-template": {
+            "title": "Update Order Info",
+            "address": "Address",
+            "note": "Note",
+            "choose-service": "Choose Service(s)"
+        },
+        "specific-trip-template": {
+            "trip-list": "Trip List",
+            "trips": "Trip(s)",
+            "trip": "Trip",
+            "orders": "Orders",
+            "special": "Special",
+            "done": "Done"
+        }
+    },
+    "supervisor": {
+        "title": "Supervisor",
+        "name": "Name",
+        "branch-name": "Branches Name",
+        "mobile": "Mobile",
+        "new": "New Supervisor"
+    },
+    "trip-detail": {
+        "title": "Trip Details",
+        "trip-distance": "Trip Distance",
+        "expected-delivery-time": "Expected Deliver Time",
+        "num-of-orders": "Number of Orders",
+        "revise-performance": "Revice Performance",
+        "must-revise": "Must Be Revised",
+        "evaluation-reason": "The Evaluation Reason",
+        "trip-tracking": {
+            "title": "Trip Tracking",
+            "created-date": "Created Date",
+            "start-time": "Start Time",
+            "delivery-order": "Delivery Order",
+            "close-time": "Close Time",
+            "not-completed-message": "Trip Tracking Will Appear When Trip Becomes Completed",
+            "excellent": "Excellent",
+            "good": "Good",
+            "late": "Late",
+            "too-late": "Too Late",
+            "not-started": "Not Started Yet"
+        },
+        "order": {
+            "title": "Orders",
+            "number": "Number",
+            "customer-name": "Customer Name",
+            "duration": "Duration",
+            "performance": "Performance",
+            "cost": "Cost",
+            "pos-time": "Pos Time",
+            "deliver-time": "Delivered Time"
+        },
+        "trip-log": {
+            "title": "Trip Log",
+            "order-number": "Order Number",
+            "status": "Status",
+            "deliveryman-name": "Deliveryman",
+            "created-date": "Date",
+            "note": "Note",
+            "action": "Action",
+            "user-name": "User Name"
+        }
+    },
+    "order-detail": {
+        "title": "Order Details",
+        "order-number": "Order Number",
+        "delivered": "Delivered",
+        "created-time": "Created Time",
+        "deliver-time": "Delivery Time",
+        "distance-from-branch": "Distance From Branch",
+        "trip-number": "Trip Number",
+        "prepared-by":"Prepared By",
+        "prepared-duration":"Prepared Duration",
+        "prepared-time":"Prepared Time",
+        "customer-info": {
+            "title": "Customer information",
+            "name": "Customer Name",
+            "serial-number": "Serial Number",
+            "mobile": "Customer Mobile",
+            "address": "Address"
+        },
+        "customer-rating": {
+            "title": "Customer Feedback",
+            "deliveryman-rating": "Deliveryman Rating",
+            "service-rating": "Service Rating",
+            "feedback": "Feedback"
+        },
+        "order-tracking": {
+            "title": "Order Tracking",
+            "created-date": "Created Date",
+            "order-status": "Order Status",
+            "delivered-time": "Delivered Time",
+            "not-completed-message": "Order Tracking Will Appear When Trip Becomes Completed"
+        },
+        "order-items": {
+            "title": "order Items",
+            "items": "Items",
+            "total": "Total",
+            "quantity": "Quantity",
+            "price": "Price",
+            "currency": "EGP"
+        },
+        "order-log": {
+            "title": "Order Log",
+            "id": "ID",
+            "status": "Status",
+            "action": "Action",
+            "created-date": "Date",
+            "note": "Note"
+        }
+    },
+    "deliveryman-penalize": {
+        "title": "Deliveryman Penalize",
+        "deliveryman-name": "Name",
+        "branch-name": "Branch",
+        "start-date": "Start Date",
+        "close-date": "Close Date",
+        "duration": "Duration"
+    },
+    "deliveryman-profile": {
+        "title": "Profile",
+        "rewards": "Rewards",
+        "wallet": "Wallet",
+        "performance": "Performance",
+        "personal-info": "Personal Info",
+        "services": "Services",
+        "trips": "Trips",
+        "orders": "Orders",
+        "reward": {
+            "title": "Rewards",
+            "ranking": "ranking",
+            "branch": "Branch",
+            "company": "Company",
+            "wallet": "Wallet",
+            "total-balance": "Total Balance",
+            "bonus": "Bonus",
+            "deduction": "Deduction",
+            "statistic": "Statistic",
+            "ignore": "Ignore",
+            "hour": "h",
+            "trips": "Trips",
+            "penalize": "Penalize",
+            "avg-on-duty": "Avg On Duty",
+            "branch-avg-on-duty": "Branch Avg On Duty"
+        },
+        "shift-performance": {
+            "title": "Shift Performance",
+            "on-duty": "On Duty"
+        },
+        "performanc": {
+            "trip-performance": "Trip Performance",
+            "total-trip": "Total Trips",
+            "trips-from-branch": "Trip From Branch",
+            "total-branch-trips": "Total Branch Trips",
+            "orders-performance": "Order Performance",
+            "total-orders": "Total Orders"
+        },
+        "personal-inf": {
+            "edit": "Edit",
+            "change-password": "Change Password",
+            "status": "Status",
+            "login": "Login",
+            "queue": "Queue",
+            "out-of-queue": "Out Of Queue",
+            "id-number": "ID Number",
+            "dm-mobile": "Deliveryman Mobile",
+            "national-id": "National ID",
+            "enroll-id": "Enroll ID",
+            "user-name": "User Name",
+            "password": "Password"
+        },
+        "edit-personal-info": {
+            "title": "Personal Information",
+            "name": "Name",
+            "user-name": "User Name",
+            "phone": "Phone Number",
+            "national-id": "National ID Number",
+            "enroll-id": "Enroll ID",
+            "password": "Password"
+        },
+        "edit-service": {
+            "selected-service": "Selected Services",
+            "select-service": "Select Service"
+        }
+    },
+    "dashboard": {
+        "title": "Dashboard",
+        "trip": "Trips Performance",
+        "order": "Orders Performance",
+        "avg-deliver-time": "Average Delivery Time",
+        "avg-deliver-time-by-branch": "Average Delivery Time By Branch",
+        "top-customer": "Top Customer",
+        "top-items": "Top Items",
+        "top-deliverymen": "Top Deliverymen",
+        "by-hour": "By-Hour",
+        "by-day": "By-Day",
+        "kpi": {
+            "delivered-order": "Deliverd Orders",
+            "avg-deliver-time": "Average Delivery Time",
+            "excellent-orders": "Excellent Orders",
+            "pendding-orders": "Pendding Orders",
+            "new-customer": "New Customer"
+        }
+       
+    },
+    "area": {
+        "branches": "Branches Count",
+        "title": "Areas",
+        "new": "Create new Area",
+        "edit": "Edit Area"
+    },
+    "side-menu": {
+        "dashboard": "Dashboard",
+        "dispatcher": "Dispatcher System",
+        "dispatcher-by-area": "Dispatcher System By Area",
+        "trip-and-order": "Trips & Orders",
+        "trip": "Trips",
+        "trip-performance-by-deliveryman": "Trip By Deliveryman",
+        "heatmap":"Heatmap",
+        "order": "Orders",
+        "trip-validation": "Trip Validation Requests",
+        "branch-tracking": "Branch Tracking",
+        "scheduled-order":"Scheduled Orders",
+        "deliverymen": {
+            "title": "Deliverymen",
+            "home": "Home",
+            "trip-request": "Trip Request",
+            "availability-request": "Availability Request",
+            "wallet": "Wallet",
+            "wallet-sammary": "Wallet Summary",
+            "rank-by-point":"ٌRank By Point",
+            "dm-break": "Deliveryman Break",
+            "branch":"Dedicated Branches"
+        },
+        "trips": {
+            "title": "Trips",
+            "validation": "Validation Requests",
+            "by-dm": "By Deliveryman"
+        },
+        "customer": {
+            "title": "Customers",
+            "home": "Home",
+            "item": "Items",
+            "shiping-addresses": "Shiping Addresses",
+            "customer-review": "Customer Review"
+        },
+        "config": {
+            "title": "Configurations",
+            "order": "Order Configuration",
+            "trip": "Trip Configuration",
+            "address": "Address Configuration",
+            "periority": "Priority Configuration"
+        },
+        "log-out": "LogOut"
+    },
+    "lay-out": {
+        "main-info": {
+            "title": "Change Main Information",
+            "name": "Name",
+            "username": "Username",
+            "email": "Email",
+            "mobile": "Mobile"
+        },
+        "change-pic": {
+            "title": "Change Profile Picture",
+            "upload": "Upload Image",
+            "cancel": "Cancel",
+            "save": "Save"
+        },
+        "change-pass": {
+            "title": "Change Password",
+            "current-pass": "Current Password",
+            "new-pass": "New Password",
+            "new-pass-confirm": "New Password Confirmation"
+        },
+        "add-user": {
+            "title": "Create New User",
+            "name": "Name",
+            "username": "Username",
+            "mobile": "Mobile",
+            "email": "Email",
+            "pass": "Password",
+            "role": "Role",
+            "branch": "Branch",
+            "national-id": "National ID",
+            "choose-role": "Choose User Role",
+            "next": "Next",
+            "create-dm": "Create Deliveryman"
+        },
+        "roles": {
+            "admin": "Admin",
+            "branch-manager": "Manager",
+            "area-manager": "Area Manager",
+            "supervisor": "Supervisor",
+            "super-admin": "SuperAdmin",
+            "dispatcher": "Dispatcher",
+            "operator": "Operator",
+            "marketing":"Marketing"
+        },
+        "logout": "Logout"
+    },
+    "customer-review": {
+        "deliveryman": "Deliveryman",
+        "branch": "Branch",
+        "customer": "Customer",
+        "dm-rate": "Deliveryman Rate",
+        "service-rate": "Service Rate",
+        "order-number": "Order Number",
+        "feedback": "Feedback",
+        "date": "Date"
+    }
+
+    ,
+    "deliveryman-shift":{
+        "hour-price":"Hour Price",
+        "total-amount":"Total Amount",
+        "title":"Deliveryman Shift"
+    },
+    "operator":{
+        "title":"Oprtators",
+        "new":"New Operator"
+        
+    },
+    "track-location": {
+        "title":"Delivery Men Live Tracking",
+        "branch": "Branch",
+        "date": "Date"
+    },
+    "tracking-request":{
+        "title":"Tracking Request",
+        "title-details":"Tracking Details",
+        "deliveryman-name":"Deliveryman",
+        "branch-name":"Branch",
+        "start-time":"Start Time",
+        "deliver-time":"deliver Time",
+        "close-time":"Close Time",
+        "interval":"Interval",
+        "sync-interval":"Sync Interval"
+    },
+    "area-perfomance":{
+        "title":"Area Performance"
+    },
+    "scheduled-order":{
+        "scheduled-time":"Scheduled Time"
+    },
+"filter":{
+  "delivery-name":"Delivery Name",
+  "order-number":"Order Number",
+  "customer-name":"Customer Name",
+  "customer-mobile":"Customer Mobile"
+}
+}

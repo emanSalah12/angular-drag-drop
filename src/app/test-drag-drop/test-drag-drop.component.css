@@ -1,0 +1,41 @@
+.curd-width {
+    max-width: 16.666666%;
+    padding-right: 0.375rem !important;
+    padding-left: 0.375rem !important;
+    position: relative;
+    width: 100%;
+    -webkit-box-flex: 0;
+    flex: 0 0 16.666666%;
+}
+
+
+.Order-cart {
+    box-shadow: 0 1px 8px rgb(11 30 56 / 16%);
+    margin: 0;
+    padding: 1px;
+    height: 100%;
+
+    background-color: white;
+
+}
+
+.card {
+    border-radius: 15px;
+    border: 1px solid #F2F3F5;
+}
+
+.card .vert-scroll {
+    max-height: 545px;
+    overflow-y: auto;
+}
+
+.card-header, .card-footer {
+    background-color: white;
+}
+
+.mb-n1, .my-n1 {
+    margin-bottom: -0.375rem !important;
+}
+.font-12{
+    font-size: 12px;
+}

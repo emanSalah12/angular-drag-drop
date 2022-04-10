@@ -1,0 +1,165 @@
+<section class="my-5" dragula="COLUMNS" [(dragulaModel)]="groups">
+  <div class="contaienr">
+    <div class="row">
+      <div class="col text-center ">
+        <h1 class="fw-bold text-primary font-monospace">Drag And Drop Demo</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section dragula="COLUMNS" [(dragulaModel)]="groups">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            Ready Orders
+          </div>
+          <div class="card-body vert-scroll">
+            <!-- card/ -->
+            <div class="row"  >
+              <div class="curd-width px-1" *ngFor="let item of [].constructor(5); let i = index">
+                <div>
+                  <div class="card Order-cart my-2 font-12">
+                    <div class="card-content">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                              class="img-fluid vert-sub dashed-img"></div>
+                          <div class="col-7 padd-right-5">
+                            <h5 class="text-bold-500 mb-0"><a
+                                href="/super-admin/order-details/index/3406544"><span>#S002-000321</span></a>
+                            </h5>
+                            <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="مونيكا وديع"> مونيكا وديع
+                            </h6>
+                            <h6 class="m-phone mb-0 c-blue">
+                              01228464396</h6>
+                            <p class="card-text Branch my-0">
+                              Branch <span class="c-blue">0
+                                km</span></p>
+                          </div>
+                          <div class="col-5 text-right padd-left-5">
+                            <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
+
+                            <p class="price my-0"><span>L.E</span>37</p>
+                            <p class="card-text Delivery my-0">
+                              READY</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="card-text mt-0 address" title=" رفض- - الدور   شقة "> رفض- - الدور شقة
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer b-radius d-flex justify-content-between">
+                      <div class=" d-inline-flex me-5 ">
+                        <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
+                          style="margin-top: 2px; width: 12px; height: 12px;">
+                        <p class="range mb-1">15:12</p>
+                      </div>
+                      <div>
+                        <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
+                            style="width: 12px; height: 12px;"></a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            Progress Orders
+          </div>
+          <div class="card-body vert-scroll">
+            <!-- card/ -->
+            <div class="row"  >
+              <div class="curd-width px-1" *ngFor="let item of [].constructor(3); let i = index">
+                <div>
+                  <div class="card Order-cart my-2 font-12">
+                    <div class="card-content">
+                      <div class="card-header">
+                        <div class="row">
+                          <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                              class="img-fluid vert-sub dashed-img"></div>
+                          <div class="col-7 padd-right-5">
+                            <h5 class="text-bold-500 mb-0"><a
+                                href="/super-admin/order-details/index/3406544"><span>#S002-000321</span></a>
+                            </h5>
+                            <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="مونيكا وديع"> مونيكا وديع
+                            </h6>
+                            <h6 class="m-phone mb-0 c-blue">
+                              01228464396</h6>
+                            <p class="card-text Branch my-0">
+                              Branch <span class="c-blue">0
+                                km</span></p>
+                          </div>
+                          <div class="col-5 text-right padd-left-5">
+                            <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
+
+                            <p class="price my-0"><span>L.E</span>37</p>
+                            <p class="card-text Delivery my-0">
+                              READY</p>
+                          </div>
+                          <div class="col-12">
+                            <p class="card-text mt-0 address" title=" رفض- - الدور   شقة "> رفض- - الدور شقة
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-footer b-radius d-flex justify-content-between">
+                      <div class=" d-inline-flex me-5 ">
+                        <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
+                          style="margin-top: 2px; width: 12px; height: 12px;">
+                        <p class="range mb-1">15:12</p>
+                      </div>
+                      <div>
+                        <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
+                            style="width: 12px; height: 12px;"></a>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="wrapper" dragula="COLUMNS" [(dragulaModel)]="groups">
+  <div class="container" *ngFor="let group of groups">
+    <span class="group-handle">{{group.name}}</span>
+    <div class="container" dragula="ITEMS" [(dragulaModel)]="group.items">
+      <div *ngFor="let item of group.items" [innerHtml]="item.name"></div>
+    </div>
+  </div>
+</div>
