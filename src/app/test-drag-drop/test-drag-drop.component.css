@@ -7,7 +7,9 @@
     -webkit-box-flex: 0;
     flex: 0 0 16.666666%;
 }
-
+.m-100{
+    margin-bottom: 100px;
+}
 
 .Order-cart {
     box-shadow: 0 1px 8px rgb(11 30 56 / 16%);
