@@ -143,3 +143,100 @@
     width: 24px;
     height: 24px;
   }
+
+  /* trips */
+
+  .Trips-cart{
+    background-color: #F9FAFC;
+    padding: 5px;
+}
+.Trips-cart .driver-img {
+    width: 40px!important;
+    height: 40px!important;
+    border: 2px solid #57DFDE!important;
+}
+
+.Trips-cart .badg-continer ,#READY-ORDERS .badg-continer{
+    background-color: white;
+}
+.Trips-cart .T-active-point ,#READY-ORDERS .T-active-point{
+    height: 10px;
+    width: 10px;
+    background: #ffffff;
+    border-radius: 50%;
+    /* border: 2px solid #fff; */
+    display: inherit;
+    margin-top: 5;
+    line-height: 6;
+}
+.Trips-cart .badge ,#READY-ORDERS .badge{
+    padding: 4px;
+    font-size: 10px;
+    border: 1px solid rgb(214, 214, 214);
+    line-height: 1;
+}
+.status-badge{
+    padding: 8px 10px !important;
+    border-radius: 30px;
+    color: white !important;
+    border: 0 !important;
+    font-size: 12px !important;
+    margin: 5px 0;
+}
+
+.Order-cart .Branch {
+    font-size: 10px;
+    color: #aaaaaa;
+}
+.Order-cart {margin: 0;padding: 1px;}
+.Order-cart .time{
+    font-size: 18px;
+    font-weight: 500;
+    /* color: #0B1E38; */
+}
+
+.Order-cart .Delivery{
+    font-size: 8px;
+}
+
+.card-footer{
+    border-top:none;
+}
+.Order-cart .card-footer:last-child{
+    border-radius: 12px !important;
+}
+
+.order-head {
+    background-color: #ebecf0;
+    height: 45px;
+    border-radius: 16px 16px 0 0;
+    margin: -5px -5px 5px;
+}
+
+.order-head img {
+    width: 40px;
+    height: 40px;
+    padding: 4px;
+    margin: 3px 0 0 3px;
+    border-radius: 10px;
+}
+
+.fl-left {
+    float: left;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.order-head .d-name {
+    line-height: 15px;
+    color: #0b1e38;
+    font-family: amplesoft;
+    width: 60%;
+    margin-top: 15px;
+    font-size: 15px;
+    font-weight: 700;
+}
+

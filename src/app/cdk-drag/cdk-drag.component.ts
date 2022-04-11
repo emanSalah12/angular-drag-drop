@@ -11,6 +11,7 @@ export class CdkDragComponent implements OnInit {
   public ordersReady = this.getReadyOrders();
   public ordersProgress = this.getProgressOrders()
   public scheduledOrders = this.getScheduledOrders()
+  public trips = this.getTrips()
   constructor() {
     
    }
@@ -19,11 +20,10 @@ export class CdkDragComponent implements OnInit {
   }
 
   drop(event: any) {
+    console.log("event",event);
     console.log("order obj",event.previousContainer.data[event.previousIndex]);
     
     if (event.previousContainer === event.container) {
-      console.log("sort",event.previousIndex, event.currentIndex);
-
       moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
     } else {
       transferArrayItem(
@@ -422,27 +422,115 @@ export class CdkDragComponent implements OnInit {
         ShowPrint: true,
         Services: null
       },
+      
     ]
   }
 
   getTrips(): any[] {
     return [
       {
-        AgentCode: "130f09de-9ade-40c1-a090-4e7b1d3a096b",
-        AgentID: 160,
-        AgentImage: "http://scooter-api.roboost.app/uploads/agents/deliveryman_character.png",
-        AgentName: "Mostafa Desoky",
-        Code: "Myb0i2hivg",
-        HubCode: "a3NvnYDtCb",
-        HubName: "Test Hub",
-        Number: "335",
-        SpentTime: 1193897,
-        StartTime:new Date ,
-        Status: 2,
+        ArrivalTime: null,
+        ArrivalTimeSecond: 0,
+        BranchID: 2,
+        BranchName: null,
+        CloseTime: null,
+        Code: "1VPkZ_i5C6",
+        CreatedDate: "2022-04-11T12:47:57.918941",
+        DeliverymanID: 441,
+        DeliverymanImage: "https://api.tayar.app/uploads/deliverymen/598d7ba2-766f-4b7d-8dbc-cef262fc5b0f.jpg",
+        DeliverymanName: "احمد محمد نصر ",
+        ExcelantMaxTime: 315,
+        ExpectedRateColor: "#cc324c",
+        ExpectedRateName: "Too Late",
+        GoodMaxTime: 375,
+        ID: 1792838,
+        IsPaused: false,
+        IsSpecialTrip: false,
+        LateMaxTime: 450,
+        Number: 24341,
+        Orders: [],
+        Performance: {ID: 1792838, Rate: 4, StatusName: 'TOO LATE', RemainingTime: 0, Color: '#b5062b'},
+        PickupTime: null,
+        PlannedCompleteTime: "2022-04-11T13:57:57.8625009",
+        PlannedCompleteTimeInt: -623,
+        PlannedDuration: 0,
+        RateStatus: 0,
+        RateStatusName: "NOT_RATED",
+        ServingTime: 5,
+        SpentTime: 902,
+        StartTime: "2022-04-11T12:49:45.3288956",
+        Status: 10,
         StatusName: "Started",
-        VendorCode: "ic5P06SXNGY",
-        VendorName: "Roboost Vendor",
+      },
+      {
+        ArrivalTime: null,
+        ArrivalTimeSecond: 0,
+        BranchID: 2,
+        BranchName: null,
+        CloseTime: null,
+        Code: "1VPkZ_i5C6",
+        CreatedDate: "2022-04-11T12:47:57.918941",
+        DeliverymanID: 441,
+        DeliverymanImage: "https://api.tayar.app/uploads/deliverymen/598d7ba2-766f-4b7d-8dbc-cef262fc5b0f.jpg",
+        DeliverymanName: "Ahmed",
+        ExcelantMaxTime: 315,
+        ExpectedRateColor: "#cc324c",
+        ExpectedRateName: "Too Late",
+        GoodMaxTime: 375,
+        ID: 1792838,
+        IsPaused: false,
+        IsSpecialTrip: false,
+        LateMaxTime: 450,
+        Number: 24341,
+        Orders: [],
+        Performance: {ID: 1792838, Rate: 4, StatusName: 'TOO LATE', RemainingTime: 0, Color: '#b5062b'},
+        PickupTime: null,
+        PlannedCompleteTime: "2022-04-11T13:57:57.8625009",
+        PlannedCompleteTimeInt: -623,
+        PlannedDuration: 0,
+        RateStatus: 0,
+        RateStatusName: "NOT_RATED",
+        ServingTime: 5,
+        SpentTime: 902,
+        StartTime: "2022-04-11T12:49:45.3288956",
+        Status: 10,
+        StatusName: "Started",
+      },
+      {
+        ArrivalTime: null,
+        ArrivalTimeSecond: 0,
+        BranchID: 2,
+        BranchName: null,
+        CloseTime: null,
+        Code: "1VPkZ_i5C6",
+        CreatedDate: "2022-04-11T12:47:57.918941",
+        DeliverymanID: 441,
+        DeliverymanImage: "https://api.tayar.app/uploads/deliverymen/598d7ba2-766f-4b7d-8dbc-cef262fc5b0f.jpg",
+        DeliverymanName: "Eman",
+        ExcelantMaxTime: 315,
+        ExpectedRateColor: "#cc324c",
+        ExpectedRateName: "Too Late",
+        GoodMaxTime: 375,
+        ID: 5,
+        IsPaused: false,
+        IsSpecialTrip: false,
+        LateMaxTime: 450,
+        Number: 24341,
+        Orders: [],
+        Performance: {ID: 1792838, Rate: 4, StatusName: 'TOO LATE', RemainingTime: 0, Color: '#b5062b'},
+        PickupTime: null,
+        PlannedCompleteTime: "2022-04-11T13:57:57.8625009",
+        PlannedCompleteTimeInt: -623,
+        PlannedDuration: 0,
+        RateStatus: 0,
+        RateStatusName: "NOT_RATED",
+        ServingTime: 5,
+        SpentTime: 902,
+        StartTime: "2022-04-11T12:49:45.3288956",
+        Status: 10,
+        StatusName: "Started",
       }
+      
     ]
   }
 

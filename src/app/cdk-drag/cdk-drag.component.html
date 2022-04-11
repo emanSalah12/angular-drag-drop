@@ -10,6 +10,146 @@
   
   
   <ng-container cdkDropListGroup>
+
+
+    <section class="mb-5 mb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <div class="card-header bg-light">
+                trips
+              </div>
+              <div class="lodaing" >
+                <div class=" text-center text-white m-auto">
+                  <span>loding...</span>
+                </div>
+              </div>
+             
+              <div class="card-body vert-scroll row " >
+  
+                <div class="curd-width px-1" *ngFor="let item of trips ; let i = index" >
+                  <div class="Trips-cart b-radius mb-2" [class.trip-change]="item.IsRealTime">
+
+                    <div class="Titel">
+                      <div class="order-head mb-1">
+                        <img [src]="item.DeliverymanImage" alt="" class="fl-left"
+                          routerLink="/owner/deliveryman-profile/index/{{item.DeliverymanID}}">
+                        <p class="d-inline-block ml-1 fl-left d-name over-hidden text-no-wrap"  [title]="item.DeliverymanName">
+                          {{item.DeliverymanName}}</p>
+    
+                      </div>
+                      <div class="row">
+                        <div class="col-12">
+                          <h5 class="text-bold-500 d-inline-block mr-1"><div
+                              routerLink="/owner/trip-details/index/{{item.ID}}">
+                              <span class="f-normal let-spc-6">trip:</span>
+                              <span class="font-lg let-spc-6 vert-sub d-inline-block">{{item.Number}}</span> </div>
+                          </h5>
+                          <span class="right badge status-badge  bg-darkblue" *ngIf="item.IsSpecialTrip">
+                            <span class="c-white vert-sub" style="margin-top: -9px;">Special</span>
+                          </span>
+                          <span ngClass="{'closed-c': isCompleted(item.ID),'Ready-c':isReady(item.ID),}"
+                            class="right badge status-badge bg-color-w">
+                            <span class="c-darkblue vert-sub" style="margin-top: -9px;">{{item.StatusName}}</span>
+                          </span>
+    
+                        </div>
+    
+                      </div>
+                      <div class="row">
+                        <div class="col-12 mt-n5">
+                          <div class="d-flex align-items-center mb-2">
+                            
+                         
+                            <div class="position-relative store-arrive mr-1" *ngIf="item.ArrivalTime" >
+                              <div class="arrive-icon mr-1">
+                                <img class="round-media c-pointer m-auto "
+                                src="/assets/app-assets/img/ico/store.svg" alt="" style="width: 16px;height: 16px;">
+                              </div>
+                              
+                                <div class="arrival-time ">
+                                  <p class="m-0 p-1"> Arrive time at {{item.ArrivalTime |date:'hh:mm a'}}</p>
+                                </div>
+                            </div>
+                            <div class="position-relative store-arrive" *ngIf="item.PickupTime">
+                              <div class="receive-icon">
+                                <img class="round-media c-pointer m-auto"
+                                src="/assets/app-assets/img/svg/motorbike-white.svg" alt="" style="width: 16px;height: 16px;">
+                              </div>
+                                <div class="arrival-time ">
+                                  <p class="m-0 p-1"> Order Received at {{item.PickupTime|date:'hh:mm a'}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                      </div>
+                      <div class="order-scroll py-4"
+                        cdkDropList
+                        [cdkDropListData]="item.Orders"
+                        (cdkDropListDropped)="drop($event)">
+                        <div *ngFor="let order of item.Orders" cdkDrag >
+                          <div class="card Order-cart my-2 font-12">
+                            <div class="card-content">
+                              <div class="drag-handle" cdkDragHandle>
+                                <svg width="24px" fill="currentColor" viewBox="0 0 24 24">
+                                  <path d="M10 9h4V6h3l-5-5-5 5h3v3zm-1 1H6V7l-5 5 5 5v-3h3v-4zm14 2l-5-5v3h-3v4h3v3l5-5zm-9 3h-4v3H7l5 5 5-5h-3v-3z"></path>
+                                  <path d="M0 0h24v24H0z" fill="none"></path>
+                                </svg>
+                              </div>
+                              
+                              <div class="card-header">
+                                <div class="row">
+                                  <div class="col-12"><img src="/assets/app-assets/img/ico/Group 16443.svg" alt=""
+                                      class="img-fluid vert-sub dashed-img"></div>
+                                  <div class="col-7 padd-right-5">
+                                    <h5 class="text-bold-500 mb-0"><a
+                                        href="/super-admin/order-details/index/3406544"><span>#{{order.OrderNumber}}</span></a>
+                                    </h5>
+                                    <h6 class="card-subtitle mb-0 mt-1 m-name font-fam-bold" title="Ahmed Makled"> {{order.Name}}
+                                    </h6>
+                                    <h6 class="m-phone mb-0 c-blue"> {{order.Mobile}}</h6>
+                                    <p class="card-text Branch my-0"> Branch <span class="c-blue">{{order.PlannedDistance}}
+                                        km</span></p>
+                                  </div>
+                                  <div class="col-5 text-right padd-left-5">
+                                    <p class="time my-0" style="color: rgb(204, 50, 76);">4:45 </p>
+                                    <p class="price my-0"><span>L.E</span>37</p>
+                                    <p class="card-text Delivery my-0">
+                                      READY</p>
+                                  </div>
+                                  <div class="col-12">
+                                    <p class="card-text mt-0 address"> {{order.Address}} </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="card-footer b-radius d-flex justify-content-between">
+                              <div class=" d-inline-flex me-5 ">
+                                <img src="/assets/app-assets/img/ico/calendar.svg" alt="" class="mr-1 pull-left"
+                                  style="margin-top: 2px; width: 12px; height: 12px;">
+                                <p class="range mb-1">{{order?.Date | date:'HH:mm'}}</p>
+                              </div>
+                              <div>
+                                <a><img src="/assets/app-assets/img/ico/map-marker-slash.svg"
+                                    style="width: 12px; height: 12px;"></a>
+                              </div>
+                            </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="mb-5 mb-100">
       <div class="container">
         <div class="row">
@@ -32,7 +172,8 @@
   
                 <div class="curd-width px-1" *ngFor="let order of ordersReady ; let i = index" 
                  cdkDrag
-                 [cdkDragDisabled]="order.Name=='Eman'">
+                >
+                <!--  [cdkDragDisabled]="order.Name=='Eman'" -->
                   <div class="card Order-cart my-2 font-12">
                     <div class="card-content">
                       <div class="drag-handle" cdkDragHandle>
